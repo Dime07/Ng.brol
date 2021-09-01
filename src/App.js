@@ -1,13 +1,16 @@
-import logo from "./logo.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-function App() {
+const Home = React.lazy(() => import("./pages/Home"));
+
+export default function App() {
   return (
-    <div className="App">
-      <h3>Dimas</h3>
-      <h3>Taufik</h3>
-    </div>
+    <React.Suspense fallback={<p>Loading...</p>}>
+      <Router>
+        <Switch>
+          <Route exact path={`/`} component={Home} />
+        </Switch>
+      </Router>
+    </React.Suspense>
   );
 }
-
-export default App;
