@@ -3,9 +3,10 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundColor: theme => ({
-        ...theme('colors'),
-         'main-color': '#092133',
+      backgroundColor: (theme) => ({
+        ...theme("colors"),
+        "main-color": "#092133",
+        "button-color": "#FF4D2A",
       }),
     },
   },
