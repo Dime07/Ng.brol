@@ -7,6 +7,7 @@ module.exports = {
         ...theme("colors"),
         "main-color": "#092133",
         "button-color": "#FF4D2A",
+        "grey-color" : "#2D3A4C"
       }),
     },
   },
